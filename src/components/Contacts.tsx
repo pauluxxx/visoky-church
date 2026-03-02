@@ -6,8 +6,15 @@ export function Contacts() {
       <div className="space-y-6 text-sm sm:text-base tracking-tight leading-relaxed">
         <div>
           <p className="opacity-40 uppercase text-[10px] font-bold tracking-widest mb-1">Адреса</p>
-          <p>вул. Кооперативна 58a, сел. Високий</p>
-          <p>Харківська обл., Харківський р-н</p>
+          <a
+            href="https://maps.app.goo.gl/DKS1UFibDTFWyRyK6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block underline underline-offset-4 decoration-black/10 dark:decoration-white/10 hover:decoration-black dark:hover:decoration-white transition-colors"
+          >
+            <p>вул. Кооперативна 58a, сел. Високий</p>
+            <p>Харківська обл., Харківський р-н</p>
+          </a>
         </div>
 
         <div>
