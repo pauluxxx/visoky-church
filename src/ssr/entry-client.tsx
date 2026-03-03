@@ -1,11 +1,14 @@
 import { StrictMode } from "react"
 import { hydrateRoot } from "react-dom/client"
+import { ThemeProvider } from "../context/ThemeContext"
 import App from "../App"
 import "../style.css"
 
 hydrateRoot(
   document.getElementById("app")!,
   <StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </StrictMode>,
 )
