@@ -1,5 +1,6 @@
 import { Hero, Contacts, Schedule, Requisites, Info, Footer } from "./components"
 import { ThemeProvider } from "./context/ThemeContext"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </ThemeProvider>
   )
 }
